@@ -1,10 +1,12 @@
 import Button from 'Components/Button'
+import Link from 'Components/Link'
+import { Router } from '@reach/router'
 
 const App = () => (
-    <div> 
-        <h1>Hello world from App </h1>
-        <Button />
-    </div>
+    <Router> 
+        <Link path="/" />
+        <Button path="/btn" />
+    </Router>
 )
 
 export default App

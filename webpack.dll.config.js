@@ -6,7 +6,8 @@ module.exports = {
     entry: {
         modules: [
             'react',
-            'react-dom'
+            'react-dom',
+            '@reach/router'
         ]
     },
     output: {
