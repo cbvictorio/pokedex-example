@@ -1,12 +1,11 @@
-import Button from 'Components/Button'
-import Link from 'Components/Link'
-import { Router } from '@reach/router'
+import { Router } from './styles'
+import Pokemons from 'Screens/Pokemons'
 
 const App = () => (
     <Router> 
-        <Link path="/" />
-        <Button path="/btn" />
+        <Pokemons path="/" />
     </Router>
 )
+
 
 export default App
