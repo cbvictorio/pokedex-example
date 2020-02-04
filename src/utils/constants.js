@@ -1,0 +1,57 @@
+const API_URL = 'https://pokeapi.co/api/v2/pokemon'
+
+// colors
+const RED = '#F25463'
+const YELLOW = '#F2E654'
+const BLUE = '#5782C2'
+const DARK_GRAY = '#908788'
+const LIGHT_GRAY = '#D0C9CA'
+
+// pokemon elements
+const COLOR_NORMAL = '#B1B27D'
+const COLOR_FIRE = '#ED8B00'
+const COLOR_FIGHT = '#C2351A'
+const COLOR_WATER = '#7898F9'
+const COLOR_FLYING = '#B198F9'
+const COLOR_GRASS = '#88D043'
+const COLOR_POISON = '#A644AF'
+const COLOR_ELECTRIC = '#F6D700'
+const COLOR_GROUND = '#E2C862'
+const COLOR_PSYCHIC = '#F46092'
+const COLOR_ROCK = '#BEAB16'
+const COLOR_ICE = '#A7DDDF'
+const COLOR_BUG = '#B1C200'
+const COLOR_DRAGON = '#782FFE'
+const COLOR_STEEL = '#C1C0D8'
+const COLOR_FAIRY = '#EDA3B5'
+const COLOR_GHOST = '#7A61A7'
+const COLOR_DARK = '#7A634F'
+const COLOR_RANDOM = '#77AA9A'
+
+export {
+    API_URL,
+    RED,
+    YELLOW,
+    BLUE,
+    DARK_GRAY,
+    LIGHT_GRAY,
+    COLOR_NORMAL,
+    COLOR_FIRE,
+    COLOR_FIGHT,
+    COLOR_WATER,
+    COLOR_FLYING,
+    COLOR_GRASS,
+    COLOR_POISON,
+    COLOR_ELECTRIC,
+    COLOR_GROUND,
+    COLOR_PSYCHIC,
+    COLOR_ROCK,
+    COLOR_ICE,
+    COLOR_BUG,
+    COLOR_DRAGON,
+    COLOR_STEEL,
+    COLOR_FAIRY,
+    COLOR_GHOST,
+    COLOR_DARK,
+    COLOR_RANDOM
+}
