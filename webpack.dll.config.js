@@ -7,7 +7,10 @@ module.exports = {
         modules: [
             'react',
             'react-dom',
-            '@reach/router'
+            '@reach/router',
+            'redux',
+            'react-redux',
+            'redux-saga'
         ]
     },
     output: {

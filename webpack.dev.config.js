@@ -6,11 +6,16 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/bundle.js'
+        filename: 'js/bundle.js',
+        publicPath: '/'
     },
     resolve: {
         alias: {
-            Components: path.resolve(__dirname, 'src', 'components')
+            Components: path.resolve(__dirname, 'src/components'),
+            ReduxFiles: path.resolve(__dirname, 'src/redux'),
+            Utils: path.resolve(__dirname, 'src/utils'),
+            Assets: path.resolve(__dirname, 'src/assets'),
+            Screens: path.resolve(__dirname, 'src/screens')
         }
     },
     module: {
@@ -21,6 +26,12 @@ module.exports = {
                     'babel-loader'
                 ],
                 exclude: path.resolve(__dirname, "node_modules")
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
             }
         ]
     },
