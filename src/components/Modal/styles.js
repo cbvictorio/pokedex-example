@@ -15,26 +15,33 @@ export const Container = styled.section`
     justify-content: center;
     align-items: center;
     font-family: Helvetica;
+    padding: 24px;
+    margin: 0;
+    box-sizing: border-box;
 `
 
 export const Title = styled.h3`
     font-size: 32px;
     color: black;
     text-align: center;
-    margin: 24px 0;
+    margin: 0 0 24px 0;
 `
 
 export const ModalBody = styled.div`
     background-color: white;
     position: relative;
     width: 480px;
-    height: 560px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 48px;
     overflow: auto;
+    height: 70%;
+
+    @media(max-width: 500px) {
+        width: 300px;
+    }
 `
 
 export const CloseButton = styled.button`
@@ -64,6 +71,10 @@ export const DataContainer = styled.div`
     justify-content: space-around;
     padding: 16px;
     margin-bottom: 24px;
+
+    @media(max-width: 500px) {
+        width: 250px;
+    }
 `
 
 export const DataTitle = styled.span`
@@ -90,7 +101,7 @@ export const PokemonElementsContainer = styled.div`
 
 export const PokemonElement = styled.span`
     border-radius: 5px;
-    width: 100px;
+    flex: 0.9;
     height: 35px;
     background-color: ${props => colorPicker(props.element)};
     display: flex;
@@ -107,4 +118,9 @@ export const PokemonImage = styled.img`
     margin-right: 8px;
     height: 100px;
     width: auto;
+
+    @media(max-width: 500px) {
+        height: 64px;
+        width: auto;
+    }
 `

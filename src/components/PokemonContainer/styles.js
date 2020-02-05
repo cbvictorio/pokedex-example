@@ -4,10 +4,9 @@ import colorPicker from 'Utils/color-picker'
 
 export const PokemonContainer = styled.div`
     height: 220px;
-    min-width: 320px;
+    min-width: 350px;
     border: 1px solid ${LIGHT_GRAY};
     border-radius: 8px;
-    flex: auto;
     cursor: pointer;
     margin: 24px;
     display: flex;
@@ -15,11 +14,15 @@ export const PokemonContainer = styled.div`
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
-    ${props => props.single ? 'max-width: 300px;' : ''}
 
     &:hover {
         transform: scale(1.05);
     }
+
+    @media(max-width: 1440px) {
+        min-width: 300px;
+    }
+
 `
 
 export const PokemonImage = styled.img``

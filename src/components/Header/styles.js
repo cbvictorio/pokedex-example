@@ -8,21 +8,38 @@ export const Container = styled.form`
     align-items: center;
     justify-content: flex-start;
     padding: 0 16px;
+
+    @media(max-width: 445px) {
+        flex-wrap: wrap;
+    }
 `
 
 export const PokeLogo = styled.img`
     width: 128px;
     height: auto;
     margin-right: auto;
+
+    @media(max-width: 1024px) {
+        margin-right: 24px;
+    }
+
+    @media(max-width: 445px) {
+        width: 100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 `
 
 export const SearchContainer = styled.section`
     height: 56px;
-    flex: 0.5;
+    flex: 0.8;
     display: flex;
     justify-content: flex-start;
-    /* border: 1px solid white; */
     margin-right: auto;
+
+    @media(max-width: 500px) {
+        flex: 1;
+    }
 `
 
 export const Input = styled.input`
@@ -36,6 +53,12 @@ export const Input = styled.input`
         font-size: 18px;
         color: ${LIGHT_GRAY};
     }
+
+    @media(max-width: 768px) {
+        &::placeholder {
+            font-size: 12px;
+        }
+    }
 `
 
 export const SearchButton = styled.button`
@@ -44,7 +67,7 @@ export const SearchButton = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0.25;
+    flex: 0.2;
     font-size: 18px;
     color: white;
     border-radius: 5px;
@@ -54,5 +77,14 @@ export const SearchButton = styled.button`
 
     &:active {
         transform: scale(1.1);
+    }
+
+    @media(max-width: 768px) {
+        font-size: 14px;
+        flex: 1;
+    }
+
+    @media(max-width: 378px) {
+        flex: 1;
     }
 `
