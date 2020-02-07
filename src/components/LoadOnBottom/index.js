@@ -1,8 +1,8 @@
 import { useRef, useEffect, useState } from 'react'
 import { connect } from 'react-redux'
 import { Container } from './styles'
-import Loader from 'Components/Loader'
-import { setAllPokemons } from 'ReduxFiles/actions/set-all-pokemons-actions'
+import Loader from '@/components/Loader'
+import { setAllPokemons } from '@/redux/actions/set-all-pokemons-actions'
 
 const LoadOnBottom = ({ pokemons, setAllPokemonsDispatcher, loading }) => {
     const element = useRef(null)

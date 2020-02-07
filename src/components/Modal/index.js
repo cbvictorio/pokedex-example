@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import { pokemonDetailsHide } from 'ReduxFiles/actions/pokemon-details-actions'
-import pokemonGeneration from 'Utils/pokemon-region'
+import { pokemonDetailsHide } from '@/redux/actions/pokemon-details-actions'
+import pokemonGeneration from '@/utils/pokemon-region'
 import { 
     Container,
     Title,

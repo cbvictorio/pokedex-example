@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { RED, LIGHT_GRAY, BLUE } from 'Utils/constants'
+import { RED, LIGHT_GRAY, BLUE } from '@/utils/constants'
 
 export const Container = styled.form`
     background-color: ${RED};

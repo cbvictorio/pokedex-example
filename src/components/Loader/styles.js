@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { RED } from 'Utils/constants'
+import { RED } from '@/utils/constants'
 
 const bounceDelayAnimation = keyframes`
     0%, 80%, 100% { 

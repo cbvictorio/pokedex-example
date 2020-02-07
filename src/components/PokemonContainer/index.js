@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react'
 import { connect } from 'react-redux'
-import { pokemonDetailsShow } from 'ReduxFiles/actions/pokemon-details-actions'
+import { pokemonDetailsShow } from '@/redux/actions/pokemon-details-actions'
 import { 
     PokemonContainer,
     PokemonName,

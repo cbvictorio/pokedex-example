@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { connect } from 'react-redux'
-import logo from 'Assets/pokeapi_256.png'
+import logo from '@/assets/pokeapi_256.png'
 import { 
     fetchSinglePokemon,
     fetchSinglePokemonCleanSearch
-} from 'ReduxFiles/actions/fetch-single-pokemon-actions'
+} from '@/redux/actions/fetch-single-pokemon-actions'
 import { 
     Container,
     SearchContainer,

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { LIGHT_GRAY, DARK_GRAY } from 'Utils/constants'
-import colorPicker from 'Utils/color-picker'
+import { LIGHT_GRAY, DARK_GRAY } from '@/utils/constants'
+import colorPicker from '@/utils/color-picker'
 
 export const PokemonContainer = styled.div`
     height: 220px;
