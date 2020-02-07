@@ -1,7 +1,7 @@
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import App from './App'
-import store from 'ReduxFiles'
+import store from '@/redux'
 
 const container = document.getElementById('root')
 
