@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Router } from './styles'
-import Pokemons from 'Screens/Pokemons'
-import Modal from 'Components/Modal'
+import Pokemons from '@/screens/Pokemons'
+import Modal from '@/components/Modal'
 
 const App = () => (
     <Fragment>
