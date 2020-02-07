@@ -18,7 +18,7 @@ import {
     COLOR_GHOST,
     COLOR_DARK,
     COLOR_RANDOM 
-} from 'Utils/constants'
+} from '@/utils/constants'
 
 function colorPicker(color) {
     switch(color) {

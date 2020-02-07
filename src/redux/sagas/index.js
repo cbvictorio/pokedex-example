@@ -1,6 +1,6 @@
 import { all } from 'redux-saga/effects'
-import fetchSinglePokemonSaga from 'ReduxFiles/sagas/fetch-single-pokemon-saga'
-import setAllPokemonsSaga from 'ReduxFiles/sagas/set-all-pokemons-saga'
+import fetchSinglePokemonSaga from '@/redux/sagas/fetch-single-pokemon-saga'
+import setAllPokemonsSaga from '@/redux/sagas/set-all-pokemons-saga'
 
 
 function * masterSaga() {
@@ -10,4 +10,4 @@ function * masterSaga() {
     ])
 }
 
-export { masterSaga }
+export default masterSaga

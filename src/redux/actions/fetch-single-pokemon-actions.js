@@ -3,7 +3,7 @@ import {
     FETCH_SINGLE_POKEMON_SUCCESS,
     FETCH_SINGLE_POKEMON_ERROR,
     FETCH_SINGLE_POKEMON_CLEAN_SEARCH
-} from 'ReduxFiles/action-types';
+} from '@/redux/action-types';
 
 const fetchSinglePokemon = payload => ({
     type: FETCH_SINGLE_POKEMON,

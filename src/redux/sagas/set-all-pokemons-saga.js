@@ -1,7 +1,7 @@
 import { call, put, takeEvery } from 'redux-saga/effects'
-import { SET_ALL_POKEMONS } from 'ReduxFiles/action-types'
-import { setAllPokemonsSuccess } from 'ReduxFiles/actions/set-all-pokemons-actions'
-import { API_URL } from 'Utils/constants'
+import { SET_ALL_POKEMONS } from '@/redux/action-types'
+import { setAllPokemonsSuccess } from '@/redux/actions/set-all-pokemons-actions'
+import { API_URL } from '@/utils/constants'
 
 async function fetchPokemonsFromIds(array) {
     const pokemons = await Promise.all(array.map(async id => {

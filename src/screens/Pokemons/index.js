@@ -1,9 +1,8 @@
-import { Fragment } from 'react'
-import Header from 'Components/Header'
-import LoadOnBottom from 'Components/LoadOnBottom'
+import Header from '@/components/Header'
+import LoadOnBottom from '@/components/LoadOnBottom'
 import { connect } from 'react-redux'
 import { Container, PokemonList, Error } from './styles'
-import PokemonContainer from 'Components/PokemonContainer'
+import PokemonContainer from '@/components/PokemonContainer'
 
 const Pokemons = ({ pokemons, singlePokemon, error }) => {
     return (

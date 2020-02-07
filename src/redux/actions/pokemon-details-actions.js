@@ -1,7 +1,7 @@
 import {
     POKEMON_DETAILS_SHOW,
     POKEMON_DETAILS_HIDE
-} from 'ReduxFiles/action-types'
+} from '@/redux/action-types'
 
 const pokemonDetailsShow = payload => ({
     type: POKEMON_DETAILS_SHOW,

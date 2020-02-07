@@ -1,7 +1,7 @@
 import { 
     POKEMON_DETAILS_SHOW,
     POKEMON_DETAILS_HIDE 
-} from 'ReduxFiles/action-types'
+} from '@/redux/action-types'
 
 const initialState = {
     pokemon: null,

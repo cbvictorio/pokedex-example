@@ -1,10 +1,10 @@
 import { call, put, takeEvery } from 'redux-saga/effects'
-import { API_URL } from 'Utils/constants'
-import { FETCH_SINGLE_POKEMON } from 'ReduxFiles/action-types'
+import { API_URL } from '@/utils/constants'
+import { FETCH_SINGLE_POKEMON } from '@/redux/action-types'
 import { 
     fetchSinglePokemonSuccess,
     fetchSinglePokemonError
-} from 'ReduxFiles/actions/fetch-single-pokemon-actions'
+} from '@/redux/actions/fetch-single-pokemon-actions'
 
 async function fetchPokemon(idName) {
     try {
