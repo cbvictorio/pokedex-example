@@ -4,11 +4,11 @@ import colorPicker from '@/utils/color-picker'
 
 export const PokemonContainer = styled.div`
     height: 220px;
-    min-width: 350px;
+    width: 350px;
     border: 1px solid ${LIGHT_GRAY};
     border-radius: 8px;
     cursor: pointer;
-    margin: 24px;
+    margin: 12px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@ export const PokemonContainer = styled.div`
     }
 
     @media(max-width: 1440px) {
-        min-width: 300px;
+        width: 300px;
     }
 
 `
