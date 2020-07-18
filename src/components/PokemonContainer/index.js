@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { pokemonDetailsShow } from '@/redux/actions/pokemon-details-actions'
 import { 
-    PokemonContainer,
+    Container,
     PokemonName,
     PokemonImage,
     PokemonElementsContainer,
@@ -41,7 +41,7 @@ const PokemonComponent = (props) => {
     }
 
     return (
-        <PokemonContainer 
+        <Container 
             key={props.id || i} 
             ref={myRef} 
             single={props.single}
@@ -60,7 +60,7 @@ const PokemonComponent = (props) => {
                     ))
                 }
             </PokemonElementsContainer>
-        </PokemonContainer>
+        </Container>
     )
 }
 

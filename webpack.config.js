@@ -6,9 +6,7 @@ const TercerJSPlugin = require('terser-webpack-plugin')
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin')
 
 module.exports = {
-    entry: {
-        app: path.resolve(__dirname, 'src', 'index.js')
-    },
+    entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].[hash].js'
@@ -25,7 +23,7 @@ module.exports = {
                 use: [
                     'babel-loader'
                 ],
-                exclude: path.resolve(__dirname, "node_modules")
+                exclude: /node_modules/
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,

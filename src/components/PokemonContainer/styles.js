@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { LIGHT_GRAY, DARK_GRAY } from '@/utils/constants'
 import colorPicker from '@/utils/color-picker'
 
-export const PokemonContainer = styled.div`
+export const Container = styled.li`
     height: 220px;
     width: 350px;
     border: 1px solid ${LIGHT_GRAY};
@@ -14,6 +14,7 @@ export const PokemonContainer = styled.div`
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
+    list-style: none;
 
     &:hover {
         transform: scale(1.05);

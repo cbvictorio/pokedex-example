@@ -21,4 +21,6 @@ psd
 thumb
 sketch
 
+coverage/
+
 # End of https://www.gitignore.io/api/react
